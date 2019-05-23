@@ -1,0 +1,16 @@
+<form [formGroup]="personne">
+<label>firstName:
+<input type="text"  formControlName="frstname" >
+</label>
+<label>lastName:
+<input type="text" formControlName="lastname" >
+</label>
+<label>Email:
+<input type="email" formControlName="email" >
+</label>
+<label>Password:
+  <input type="password" formControlName="password">
+</label>
+<input type="button" value="registre" (click)="remplire()" >
+</form>
+

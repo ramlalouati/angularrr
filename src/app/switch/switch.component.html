@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]='num'>
+<div [ngSwitch]="num">
+  <div *ngSwitchCase='1'>1</div>
+  <div *ngSwitchCase="2">2</div>
+  <div *ngSwitchCase="3">3</div>
+  <div *ngSwitchCase="4">4</div>
+  <div *ngSwitchCase="5">5</div>
+  <div *ngSwitchDefault>error</div>
+  </div>
+

@@ -1,0 +1,8 @@
+<div *ngFor="let i of arr">
+  {{i.name}}
+</div>
+<div *ngFor="let i of arr; index as y">
+  {{y+1}}-{{i.name}}
+</div>
+<div *ngFor="let i of arr1; index as u ; first as x"[style.color]="x?'grenn':'red'">
+  </div>

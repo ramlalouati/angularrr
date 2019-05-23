@@ -1,0 +1,53 @@
+<div class="image">
+<img [src]="img">
+</div>
+<div class="tableau">
+<table>
+<table>
+  <tr>
+    <th>Month</th>
+<th>Saving</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+  <tr> 
+    <!--class binding-->
+    <td [attr.colspan]="col">sum:$180</td>
+  </tr>
+</table>
+</table>
+</div>
+<h1 [class.green]="isactive">Hello</h1>
+<!--Event Binding-->
+<h1 (click)="login()" >login</h1>
+<!--
+<div class="">
+    <input type="text" (Keydown)="login($event)" >
+    <input type="text"  ()="login($event)">
+</div>
+-->
+
+<input type="text" (keydown)="login()">
+<div><input type="text" id="t1" [(ngModel)]="num1"><input type="text" id="t2" [(ngModel)]="num2" >
+  <input type="button" value="Addition" id="cal" (click)="addition()" >
+<input type="button"  value="soustraction" (click)="sous()">
+<input type="button"  value="multiplication"  (click)="multiple()">
+<input type="button"  value="division"   (click)="Division()">
+</div>
+<div *ngIf="open ; else by ">heloo </div>
+<ng-template #by>
+  <div>
+    goodby
+  </div>
+</ng-template>
+  
+
+
+
+
